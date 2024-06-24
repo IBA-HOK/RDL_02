@@ -1,168 +1,59 @@
-@charset "utf-8";
-
-.first-view {
-height: calc(100vh - 110px);
-background-image: url(../images/index/bg_main.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-display: flex;
-align-items: center;
-}
-
-.first-view-text {
-width: 100%;
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 40px;
-padding-bottom: 80px;
-color: #ffffff;
-font-weight: bold;
-text-shadow: 1px 1px 10px #4b2c14;
-}
-
-.first-view-text h1 {
-font-family: 'Montserrat', sans-serif;
-font-size: 56px;
-line-height: 72px;
-}
-
-.first-view-text p {
-font-size: 18px;
-margin-top: 20px;
-}
-
-.lead {
-max-width: 1200px;
-margin: 60px auto;
-}
-
-*,
-::before,
-::after {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-
-ul, ol {
-list-style: none;
-}
-
-a {
-color: inherit;
-text-decoration: none;
-}
-
-body {
-font-family: sans-serif;
-font-size: 16pt;
-color: #000000;
-line-height: 1;
-background-color: #ffffff;
-}
-
-img {
-max-width: 100%;
-}
-
-.header-inner {
-max-width: 1200px;
-height: 110px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 40px;
-padding-right: 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.toggle-menu-button {
-display: none;
-}
-
-.header-logo {
-display: block;
-width: 170px;
-}
-
-.site-menu ul {
-display: flex;
-}
-
-.site-menu ul li {
-margin-left: 20px;
-margin-right: 20px;
-}
-
-.site-menu ul li a {
-font-family: 'Cherry Bomb One', cursive;
-}
-
-@media (max-width: 800px) {
-.site-menu ul {
-display: block;
-text-align: center;
-}
-
-.site-menu li {
-margin-top: 20px;
-}
-
-.header {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-background-color: #ffffff;
-height: 50px;
-z-index: 10;
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-inner {
-padding-left: 20px;
-padding-right: 20px;
-height: 100%;
-}
-
-.header-logo {
-width: 100px;
-}
-
-.main {
-padding-top: 50px;;
-}
-
-.footer-logo {
-margin-top: 60px;
-}
-
-.copyright {
-margin-top: 50px;
-}
-}
-
-.footer {
-color: #ffffff;
-background-color: #24211b;
-padding-top: 30px;
-padding-bottom: 15px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.footer-logo {
-display: block;
-width: 235px;
-margin-top: 90px;
-}
-
-.copyright {
-font-size: 14pt;
-font-weight: bold;
-margin-top: 90px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>名城大学情報工学部非公式HP</title>
+    <meta name="description" content="名城大学情報工学部非公式HP">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/toggle-menu.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <a class="header-logo" href="index.html">
+            <img src="images/common/logo.png" alt="ロゴ">
+        </a>
+        <button class="toggle-menu-button"></button>
+        <div class="header-site-menu">
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="concept.html">コンセプト</a></li>
+                    <li><a href="members.html">メンバー</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="first-view">
+        <div class="first-view-text">
+            <h1>名城大学情報工学部</h1>
+            <p>想像以上を，創造しよう．</p>
+            <div class="lead">
+                ノーベル賞受賞者を擁する理工学部の伝統的な学びとAI時代のニーズに応える先進的な学び．
+                理工学部 情報工学科を「情報工学部」へとアップデートし，
+                多種多様な分野で活躍する，次世代の情報エンジニアを育成します．
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <nav class="site-menu">
+        <ul>
+            <li><a href="concept.html">コンセプト</a></li>
+            <li><a href="members.html">メンバー</a></li>
+            <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </nav>
+    <a class="footer-logo" href="index.html">
+        <img src="images/common/logo_footer.png" alt="ロゴ">
+    </a>
+    <p class="copyright"><small>&copy;名城大学情報工学部(嘘)</small></p>
+</footer>
+</body>
+</html>
