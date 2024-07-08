@@ -38,7 +38,7 @@
 }
 
 .main .video {
-    float:right;
+    text-align: right;
     position: relative;
     width: 100%;
 
@@ -46,7 +46,7 @@
 
 .feature-text {
     max-width: 500px;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 
