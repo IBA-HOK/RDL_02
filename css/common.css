@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+p {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 body {
     font-family: sans-serif;
     font-size: 16pt;
