@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.sidefix-deco {
+    left: 0;
+    max-height: calc(200vh - 80px);
+    max-width: 100px;
+    mix-blend-mode: hard-light;
+    position: fixed;
+    top: 80px;
+    z-index: 4;
+}
+.sidefix-deco>.image {
+    aspect-ratio: 550 / 2560;
+    height: 300%;
+    max-height: calc(200vh - 54px);
+}
