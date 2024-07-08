@@ -1,6 +1,6 @@
 .title {
     height: 310px;
-    background-image: url(../images/concept/bg-main.jpg);
+    background-image: url(../images/concept/bg-main2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -19,9 +19,11 @@
 }
 
 .title p {
-    font-size: 14px;
+    font-size: 32px;
     margin-top: 15px;
 }
+
+
 
 .feature {
     display: flex;
@@ -35,14 +37,17 @@
     align-items: flex-start;
 }
 
+.moive{
+    float: right;
+    flex-direction: row-reverse;
+}
+
 .feature-text {
     max-width: 500px;
     margin-right: 40px;
 }
 
-.reverse {
-    flex-direction: row-reverse;
-}
+
 
 .reverse .feature-text {
     margin-left: 40px;
