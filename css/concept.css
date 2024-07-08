@@ -37,9 +37,11 @@
     align-items: flex-start;
 }
 
-.moive{
-    float: right;
-    flex-direction: row-reverse;
+.main .video {
+    float:right;
+    position: relative;
+    width: 100%;
+
 }
 
 .feature-text {
