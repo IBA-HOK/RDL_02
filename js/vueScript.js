@@ -5,24 +5,17 @@ const app = createApp({
     setup() {
         const vocaloidBirthYear = 2004;
         const vocaloidBirthMonth = 3;
-        let vocaloidAgeArray = toAge(vocaloidBirthYear, vocaloidBirthMonth)
-        let vocaloidAge = vocaloidAgeArray[0] + "年と" + vocaloidAgeArray[1] + "か月前に生まれた"
+        const synthesizervBirthYear = 2018;
+        const synthesizervBirthMonth = 8;
+        const UTAUBirthYear = 2008;
+        const UTAUBirthMonth = 3;
+        const CeVIOBirthYear = 2013;
+        const CeVIOBirthMonth = 4;
 
-        let synthesizervBirthYear = 2018;
-        let synthesizervBirthMonth = 8;
-        let synthesizervAgeArray = toAge(synthesizervBirthYear, synthesizervBirthMonth)
-        let synthesizervAge = synthesizervAgeArray[0] + "年と" + synthesizervAgeArray[1] + "か月前に生まれた"
-
-        let UTAUBirthYear = 2008;
-        let UTAUBirthMonth = 3;
-        let UTAUAgeArray = toAge(UTAUBirthYear, UTAUBirthMonth)
-        let UTAUAge = UTAUAgeArray[0] + "年と" + UTAUAgeArray[1] + "か月前に生まれた"
-
-        let CeVIOBirthYear = 2013;
-        let CeVIOBirthMonth = 4;
-        let CeVIOAgeArray = toAge(CeVIOBirthYear, CeVIOBirthMonth)
-        let CeVIOAge = CeVIOAgeArray[0] + "年と" + CeVIOAgeArray[1] + "か月前に生まれた"
-
+        let vocaloidAge =  toAgeText(vocaloidBirthYear, vocaloidBirthMonth)
+        let synthesizervAge = toAgeText(synthesizervBirthYear, synthesizervBirthMonth)
+        let UTAUAge = toAgeText(UTAUBirthYear, UTAUBirthMonth)
+        let CeVIOAge = toAgeText(CeVIOBirthYear, CeVIOBirthMonth)
         return {
             vocaloidAge,
             synthesizervAge,
@@ -43,4 +36,8 @@ function toAge(birthYear, birthMonth) {
         ageMonth += 12;
     }
     return [ageYear, ageMonth]
+}
+function toAgeText(birthYear, birthMonth) {
+    let ageArray = toAge(birthYear, birthMonth);
+    return ageArray[0] + "年と" + ageArray[1] + "か月前に生まれた"
 }
