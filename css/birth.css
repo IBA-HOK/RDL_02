@@ -1,0 +1,15 @@
+.map {
+    width: 930px;
+    max-width:60vw;
+    height: 100vw;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.map iframe {
+
+    height: calc(100vw - 200px);
+    display: block;
+    width: 100%;
+    margin: 50px 100px 60px;
+}

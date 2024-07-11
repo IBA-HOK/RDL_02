@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <script src="js/script.js"></script>
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/SideDeco.css" rel="stylesheet">
+    <link href="css/character.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
@@ -33,9 +32,36 @@
     </div>
 </header>
 <main class="main">
-    <center><font size="7">ようこそ<br>ボカロの世界へ</font></center>
-    <p>音楽，イラスト，踊ってみた...一枚のイラストと機械の声から無限に広がるカルチャーの沼にあなたも！</p>
-      <script src="js/SideDeco.js"></script>
+    <div class="subtitle">
+        <h2>ボーカロイド一覧</h2>
+    </div>
+    <div id="app">
+        <ul class="engine-list">
+            <li>
+                <a href="vocaloid.html"><img src="images/characters/vocaloid_logo.webp" alt="VOCALOID" class="softLogo"></a>
+                <p class="ages">{{vocaloidAge}}</p>
+
+            </li>
+            <br>
+            <li>
+                <a href="cevio.html"><img src="images/characters/cevio_logo.png" alt="CeVIO AI" class="softLogo"></a>
+                <p class="ages">{{CeVIOAge}}</p>
+            </li>
+            <br>
+            <li>
+                <a href="utau.html"><img src="images/characters/utau_logo.webp" alt="UTAU" class="softLogo"></a>
+                <p class="ages">{{UTAUAge}}</p>
+            </li>
+            <br>
+            <li>
+
+                <a href="synthesizerv.html"><img src="images/characters/synthesizerv_logo.svg" alt="SynthesizerV" class="softLogo"></a>
+                <p class="ages">{{synthesizervAge}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <script type="module" src="./js/vueScript.js"></script>
 </main>
 <footer class="footer">
     <nav class="site-menu">

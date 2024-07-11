@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.sidefix-deco {
+    left: 0;
+    max-height: calc(90vh - 80px);
+    max-width: 100px;
+    mix-blend-mode:difference;
+    position: fixed;
+    top: 80px;
+    z-index: 4;
+}
+.sidefix-deco>.image {
+
+    height: 300%;
+    max-height: calc(90vh - 54px);
+}
