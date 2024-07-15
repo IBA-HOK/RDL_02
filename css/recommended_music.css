@@ -1,0 +1,47 @@
+
+.main .video{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*margin-top: 20px;*/
+    max-width: 90vw;
+    text-align: right;
+    position: relative;
+    width: 100%;
+}
+.video iframe{
+    max-width: 70vw;
+    max-height: calc(9vw*70/16);
+    object-fit: contain;
+}
+.feature-text {
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+
+
+.reverse .feature-text {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.feature-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.feature-text h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.feature-text p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
+}
