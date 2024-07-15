@@ -12,3 +12,15 @@
     
     height: auto;
 }
+.ages {
+    font-family: "DotGothic16", sans-serif;
+    text-align: center;
+}
+.softLogo {
+    display: block;
+    width: 500px;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
