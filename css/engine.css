@@ -1,0 +1,29 @@
+.character{
+    margin: 5%;
+    box-sizing: border-box;
+    max-width: 90vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character img{
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 40vw;
+    max-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explanation{
+    text-align: left;
+}
+
+p {
+    padding: 50px 20px;
+}
+
+ul{
+    column-count: 2;
+    column-gap: 20px;
+}
