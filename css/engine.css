@@ -15,7 +15,13 @@
 }
 
 .explanation{
-    text-align-last: justify;
+    text-align: left;
+}
+
+p {
+    padding: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 ul{
