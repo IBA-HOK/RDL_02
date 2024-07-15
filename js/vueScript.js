@@ -1,4 +1,4 @@
-import {createApp} from "https://unpkg.com/vue@3.2.4/dist/vue.esm-browser.prod.js";
+import {createApp} from "./vue324.js";
 
 
 const app = createApp({
